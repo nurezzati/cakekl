@@ -7,31 +7,31 @@ const menuItems = [
     {
         category: "Signature Layer Cakes",
         description: "Multi-tiered masterpieces with fresh floral décor and exotic flavour combinations.",
-        price: "From RM 180",
+        price: "From RM180",
         image: "https://images.unsplash.com/photo-1622576890453-8e50b6f7d5b0?w=600&q=80"
     },
     {
         category: "Chocolate Indulgence",
         description: "Rich Belgian chocolate cakes — from truffle ganache to molten lava glory.",
-        price: "From RM 150",
+        price: "From RM150",
         image: "https://images.unsplash.com/photo-1606890737304-57a1ca8a5b62?w=600&q=80",
     },
     {
         category: "Fruit & Floral",
         description: "Light sponge layers adorned with seasonal fresh fruits and edible blooms.",
-        price: "From RM 140",
+        price: "From RM140",
         image: "https://images.unsplash.com/photo-1579356094148-9b74dab60f5b?w=1170&q=80",
     },
     {
         category: "Malay Heritage Flavours",
         description: "Pandan, gula melaka, and coconut-infused cakes celebrating local roots.",
-        price: "From RM 160",
+        price: "From RM160",
         image: "https://images.unsplash.com/photo-1694837492769-76b4b4a87f17?w=765&q=80",
     },
     {
         category: "Cheesecake Creations",
         description: "Japanese-style burnt basque and NY baked cheesecakes with premium toppings.",
-        price: "From RM 120",
+        price: "From RM120",
         image: "https://images.unsplash.com/photo-1695088957322-e253097aa640?w=600&q=80",
     },
     {
@@ -85,11 +85,11 @@ export default function Menu() {
                             whileInView={{ opacity: 1, y: 0 }}
                             viewport={{ once: true, margin: "-50px" }}
                             transition={{ duration: 0.6, delay: i * 0.1 }}
-                            className="flex flex-col group bg-[#FEFCE8] p-6 shadow-sm hover:shadow-md transition-shadow duration-300 rounded-lg"
+                            className="flex flex-col group bg-[#FEFCE8] shadow-sm hover:shadow-md transition-shadow duration-300 rounded-lg"
                         >
                             {/* Image */}
-                            <div className="relative h-64 w-full overflow-hidden mb-6 rounded-md">
-                                <div className="relative w-full h-full overflow-hidden rounded-md">
+                            <div className="relative h-100 w-full overflow-hidden mb-6 rounded-t-lg">
+                                <div className="relative w-full h-full overflow-hidden rounded-t-lg">
                                     <Image
                                         src={item.image}
                                         alt={item.category}
@@ -100,7 +100,7 @@ export default function Menu() {
                             </div>
 
                             {/* Content */}
-                            <div className="flex-1 flex flex-col">
+                            <div className="flex-1 flex flex-col px-6 pb-6 pt-4">{/*text padding left-right(x-axis), top,bottom below images*/}
                                 <div className="flex justify-between items-start mb-2">
                                     <h3
                                         className="text-[#121212] font-semibold text-lg"
